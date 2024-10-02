@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Track - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Left Side: Login Form -->
+        <div class="login-form">
+            <div class="logo">
+                <h2>Impact Track</h2>
+                <p>Login into your account</p>
+            </div>
+            <form onsubmit="return false;"> <!-- Prevent default form submission -->
+                <div class="input-group">
+                    <label for="username">Enter A Username</label>
+                    <input type="username" id="username" name="username" placeholder="Username" required>
+                </div>
+                <!-- Email Input -->
+                <div class="input-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="alex@email.com" required>
+                </div>
+
+                <!-- Password Input -->
+                <div class="input-group">
+                    <label for="password"> Enter A Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+               
+
+                <!-- Login Button -->
+                <button type="button" class="btn-primary" onclick="redirectToProfile()">Signup now</button>
+
+                
+            </form>
+        </div>
+
+        <!-- Right Side: Illustration -->
+        <div class="login-illustration">
+            <img src="images/pro.png" alt="Login Illustration">
+        </div>
+    </div>
+
+    <!-- JavaScript to handle the redirection -->
+    <script>
+        function redirectToProfile() {
+            window.location.href = "pro.html"; // Redirect to the profile page
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Track - FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column; /* Arrange children vertically */
+            min-height: 100vh; /* Full height of the viewport */
+            font-family: 'Urbanist', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+    background-color: #D9D9D9;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 18px 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+.navbar p {
+    font-size: 1.8em; /* Larger font size for brand name */
+    color: #333; /* Darker text color for contrast */
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-links ul li {
+    list-style: none;
+    margin-left: 20px; /* Space between links */
+}
+
+.nav-links ul li a {
+    color: #333; /* Darker text color for contrast */
+    text-decoration: none;
+    font-size: 16px; /* Increased font size */
+    padding: 10px 15px; /* Add padding for link elements */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.nav-links ul li a:hover {
+    background-color: rgba(51, 51, 51, 0.2); /* Semi-transparent background on hover */
+    transform: translateY(-2px); /* Slight elevation effect */
+    color: #207CEB; /* Change text color on hover */
+}
+
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 40px;
+            text-align: center; /* Center the title and description */
+            flex: 1; /* Allow this section to grow and fill space */
+        }
+
+        .faq-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .faq-section p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left; /* Align questions to the left */
+        }
+
+        details {
+            background-color: #e8e8e8;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; /* Full width */
+        }
+
+        summary {
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        details p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .plus {
+            font-size: 20px;
+        }
+
+        details[open] {
+            background-color: #d1d1d1;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #003366; /* Match the header's dark blue */
+            color: white;
+            padding: 30px;
+            text-align: left; /* Align content to the left */
+        }
+
+        .footer h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer small {
+            display: block;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <p>Impact Track</p></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="impact2.html">Home</a></li>
+                    <li><a href="FAQ.html">FAQ'S</a></li>
+                    <li><a href="login.html">Login/Signup</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="pro.html">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <p>Below are some of the questions we hear the most from donors and the charities listed and/or rated on our site.</p>
+
+        <div class="faq-container">
+            <details>
+                <summary>Does it cost to use Impact Track? <span class="plus">+</span></summary>
+                <p>No, you do not have to pay to use our service. We refuse to charge our users for trusted data and do not accept funding from the charities we evaluate, ensuring our ratings remain objective.</p>
+            </details>
+
+            <details>
+                <summary>How can I contact a charity listed on our website? <span class="plus">+</span></summary>
+                <p>Each charity’s page on our website displays as much contact information as we currently have available, including website URL, phone number, and physical address.</p>
+            </details>
+
+            <details>
+                <summary>The CEO's salary of a charity seems high; should I still support them? <span class="plus">+</span></summary>
+                <p>Nonprofit CEO salaries vary for many reasons, including geography and organization size. Compensation is included in the expense ratios, which measure how a nonprofit allocates its budget towards its mission.</p>
+            </details>
+
+            <details>
+                <summary>What should I do if I believe a charity is acting illegally or unethically? <span class="plus">+</span></summary>
+                <p>If you believe a charity is acting unethically or illegally, we encourage you to report your concerns to the appropriate authorities, such as the IRS or the Attorney General.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <h2>IMPACT TRACK</h2>
+        <p>Helping You Track the Impact | Transforming Lives One Step at a Time</p>
+        <p>Our mission is to provide trusted, transparent data to help philanthropists, social investors, and organizations in making informed giving decisions.</p>
+        <div class="footer-links">
+            <a href="#">FAQs</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Donor Basics</a>
+        </div>
+        <small>&copy; 2024 All Rights Reserved by Impact Track</small>
+    </footer>
+
+</body>
+</html>

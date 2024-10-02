@@ -1,0 +1,131 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f8fa;
+}
+
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    width: 40%;
+    background: white;
+    padding: 40px;
+    border-radius: 12px 0 0 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-illustration {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f4ff;
+    border-radius: 0 12px 12px 0;
+}
+
+/* Logo & Header */
+.logo h2 {
+    font-size: 26px;
+    color: #207CEB;
+}
+
+.logo p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #207CEB; 
+}
+
+.forgot-password {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #207CEB;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #207CEB;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #2a38a6;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #bbb;
+}
+
+.btn-secondary {
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #207CEB;
+    border-radius: 5px;
+    color: #207CEB;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f4ff;
+}
+
+
+.login-illustration img {
+    max-width: 80%;
+    border-radius: 12px;
+}

@@ -1,0 +1,272 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Make sure the container takes the full height */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar {
+    background-color: #D9D9D9;
+    position: fixed;
+    top: 0; 
+    z-index: 1000; 
+    width: 99%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px ; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+.navbar p {
+    font-size: 1.8em; /* Larger font size for brand name */
+    color: #333; /* Darker text color for contrast */
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-links ul li {
+    list-style: none;
+    margin-left: 20px; 
+}
+
+.nav-links ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;  
+}
+
+.nav-links ul li a:hover {
+    background-color: rgba(51, 51, 51, 0.2); 
+    transform: translateY(-2px);
+    color: #207CEB; 
+}
+
+
+.nav-links ul li a:hover {
+    background-color: rgba(51, 51, 51, 0.2); /* Semi-transparent background on hover */
+    transform: translateY(-2px); /* Slight elevation effect */
+    color: #207CEB; /* Change text color on hover */
+}
+.logo img {
+    margin-right: 15px;
+    width: 60px;
+    height: auto;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.tags {
+    margin-top: 5px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #555;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* Call to Action Buttons */
+.cta-buttons {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.donate {
+    background-color: #e31c79;
+    color: white;
+    font-weight: bold;
+}
+
+.favorite {
+    background-color: #eaeaea;
+    color: #333;
+}
+
+.donate-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.donate-text a {
+    color: #e31c79;
+    text-decoration: none;
+}
+
+/* Information Section */
+.info {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info ul li {
+    margin-bottom: 5px;
+}
+
+.info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Mission Statement */
+.mission {
+    margin-top: 20px;
+}
+
+.mission h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.mission p {
+    line-height: 1.6;
+}
+
+/* Rating Section */
+.rating-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.rating-box {
+    width: 30%;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rating-box h2 {
+    font-size: 36px;
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.rating-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+.stars {
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+.rating-details {
+    width: 60%;
+}
+
+.rating-details p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.rating-details strong {
+    width: 200px;
+    font-size: 14px;
+}
+
+.rating-bar {
+    width: 100%;
+    background-color: #eaeaea;
+    height: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rating-bar .filled {
+    background-color: #0066cc;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Additional Styles */
+@media (max-width: 768px) {
+    .rating-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rating-box, .rating-details {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
